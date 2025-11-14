@@ -1,0 +1,146 @@
+@use "../variables/variables" as *;
+/*
+Theme Name: Edupls Education HTML5 Template
+Theme URI:
+Design by: Uzzol
+Developed by: Asadur Jaman Nur
+*/
+/*
+01. Theme Base
+    1.1.Mixin
+    1.2. Variable
+    1.3. Typography
+    1.4. Google Fonts
+0.2. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. input
+    2.4. Swiper Slider
+    2.5. Mobile menu
+0.3. Utilities
+    3.1. Buttons
+    3.2. Titles
+    3.3. Common
+    3.4. Font
+    3.5. Background
+    3.6. Text color
+    3.7. Ovarlay
+    3.8. Animation
+0.4. Template style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Pagination
+    4.5. Blog 
+    4.6. Header Top
+    4.7. Content Info
+    4.8. User Login
+    4.9. Main Menu
+    4.10. Banner
+    4.11. Play Data
+    4.12. Case Studies
+    4.13. About Us
+    4.14. Courses Plan
+    4.15. How It Work
+    4.16. CTA
+    4.17. Why Choose Us
+    4.18. Star
+    4.19. My Accordion
+    4.20. Add Slide
+    4.21. Student Feedback
+    4.22. Our Blog
+    4.23. Brands
+    4.24. Our Best Team
+    4.25. Skill Section
+    4.26. Make An Appointment
+    4.27. Check Box
+    4.28. Features
+    4.29. Pricing Plan
+    4.30. Progress Bar
+    4.31. Skill Items
+    4.32. Education Video Watch
+    4.33. Courses
+    4.34. Our Events
+    4.35. Asked Question
+    4.36. Latests News
+    4.37. Google Map
+    4.38. Register Now
+    4.39. Client Say
+    4.40. Breadcum
+    4.41. Team Details
+    4.42. Events
+    4.43. Get Tickets
+*/
+
+
+/* ===============
+    Google Fonts
+   =============== */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+body {
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-paragraph;
+}
+
+/* ================
+    Default Value
+   ================ */
+h1 {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
+  color: $color-secondary;
+  text-transform: none;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+p a,
+span a {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}

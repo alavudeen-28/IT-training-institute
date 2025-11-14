@@ -1,0 +1,112 @@
+@use "../autoprefixer/autoprefixer" as *;
+@use "../variables/variables" as *;
+
+.section-title {
+  margin-bottom: 50px;
+  display: flex;
+  &.start {
+    @include justify-content-start;
+  }
+  &.center {
+    @include justify-content-center;
+  }
+  &.end {
+    @include justify-content-end;
+  }
+  .section-title-inner {
+    &.start {
+      text-align: start;
+    }
+    &.center {
+      text-align: center;
+    }
+    &.end {
+      text-align: end;
+    }
+    .sub-title {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $color-primary;
+      padding: 3px 20px;
+      background: $color-white;
+      border: 1px solid #f6f5f5;
+      box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.07);
+      border-radius: 100px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .sub-titlev2 {
+      color: $color-primary;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 2.43px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.7px;
+        color: $color-primary;
+        padding: 0 8px;
+        background: $color-white;
+        border: 1px solid #f6f5f5;
+        box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 100px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-family: $title-font;
+      }
+      &.color-white {
+        color: $color-white;
+      }
+    }
+    .sub-titlev3 {
+      color: $color-white;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 2.43px;
+      text-transform: uppercase;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .big-title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .title-para {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      margin-top: 22px;
+      font-family: $body-font;
+      &.mb-30 {
+        margin-bottom: 30px;
+      }
+      &.sp-color-black {
+        color: $color-paragraph;
+      }
+      &.sp-color-white {
+        color: $color-white4;
+      }
+    }
+  }
+  .s-color-white {
+    color: $color-white;
+  }
+  &.v2 {
+    @include d-flex;
+    @include justify-content-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}

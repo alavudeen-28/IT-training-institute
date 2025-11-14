@@ -1,0 +1,10 @@
+.cursor-sparkle-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  display: block;
+  mix-blend-mode: normal; /* you can try 'screen' or 'overlay' for different visual effects */
+}

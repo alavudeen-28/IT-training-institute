@@ -1,0 +1,566 @@
+@use "../variables/variables" as *;
+@use "../autoprefixer/autoprefixer" as *;
+
+/*-------------------
+      Header Top
+  -------------------*/
+
+.header-one-top-area {
+  background: $color-primary;
+}
+
+.header-two-top-area,
+.header-three-top-area {
+  background: #142439;
+  border-bottom: 1px solid #384350;
+}
+
+.header-three-top-area {
+  background: #121830;
+}
+
+/*-------------------
+    User Login
+  -------------------*/
+.user-login {
+  display: none;
+  @include align-items;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+
+  li {
+    color: $color-white;
+
+    &:first-child {
+      margin-right: 1px;
+    }
+
+    &:last-child {
+      position: relative;
+
+      &::before {
+        content: "/";
+        position: absolute;
+        left: -7px;
+        color: $color-white;
+      }
+    }
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+      font-family: $body-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      a {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+/*-------------------
+      Header Top Content
+  -------------------*/
+.header-top-content {
+  &.v1 {
+    @include d-flex;
+    @include justify-content-between;
+    padding: 13px 0;
+
+    .discount-the-month {
+      font-family: $body-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-white;
+    }
+  }
+
+  &.v2 {
+    @include d-flex;
+    @include justify-content-between;
+    @include align-items;
+    padding: 10px 0;
+
+    .para {
+      color: $color-white;
+      font-family: $body-font;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+
+    .contact-info {
+      @include d-flex;
+      @include justify-content-center;
+      gap: 18px;
+
+      li {
+        color: $color-white;
+        font-size: 13px;
+        @include d-flex;
+        @include align-items;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+/*-------------------
+  Follow Us Link
+  -------------------*/
+.follow-us-link {
+  @include align-items;
+  gap: 20px;
+  display: none;
+
+  .follow-icon {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    @include transition;
+
+    a {
+      color: $color-white;
+    }
+
+    &:hover {
+      a {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.nav-middle-content {
+  display: none;
+  justify-content: space-around;
+
+  .content-location {
+    border-right: 1px dotted $color-border;
+    padding-right: 63px;
+    margin-left: 50px;
+  }
+
+  .content-address {
+    margin-left: 30px;
+  }
+
+  .content-location,
+  .content-address {
+    gap: 10px;
+
+    .info-data {
+      a {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-primary;
+      }
+
+      .para {
+        font-family: $body-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-paragraph;
+      }
+    }
+
+    .location-icon,
+    .address-icon {
+      background: $color-primary;
+      width: 50px;
+      height: 50px;
+      @include d-flex;
+      @include justify-content-center;
+      @include align-items;
+      border-radius: 50%;
+      color: $color-white;
+    }
+  }
+}
+
+/*-------------------
+    Top Content Info
+  -------------------*/
+.top-nav-search-option {
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+
+  form {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+
+    input {
+      padding: 14px 23px;
+      width: 100%;
+      border: 1px solid $color-border;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #f6fdff;
+
+      &::placeholder {
+        font-family: $body-font;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $color-paragraph;
+      }
+    }
+
+    .search-btn-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55px;
+      height: 100%;
+      background: $color-primary;
+      color: $color-white;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 10px;
+      color: $color-white;
+    }
+  }
+}
+
+.top-content-info {
+  padding: 20px 0;
+
+  .logo-img {
+    @include d-flex;
+    @include justify-content-between;
+    @include align-items;
+  }
+}
+
+/*-------------------
+    Menu Social
+  -------------------*/
+.menu-social {
+  display: none;
+  @include align-items;
+  gap: 10px;
+
+  li {
+    border-radius: 5px;
+    overflow: hidden;
+
+    a {
+      @include d-flex;
+      @include justify-content-center;
+      @include align-items;
+      width: 30px;
+      height: 30px;
+      background: $color-white;
+      color: $color-primary;
+      font-size: 14px;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+/*-------------------
+  Menu Contact Number
+  -------------------*/
+.menu-contact-number {
+  display: none;
+  @include align-items;
+  text-transform: uppercase;
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-white;
+    @include transition;
+  }
+
+  &::before {
+    font-family: "icomoon";
+    content: "\e90d";
+    speak: never;
+    font-size: calc(100% + 10px);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-right: 5px;
+    color: $color-white;
+    @include transition;
+  }
+
+  &:hover {
+
+    a,
+    &::before {
+      color: $color-black;
+    }
+  }
+}
+
+/*-------------------
+    Header Login Regi
+  -------------------*/
+.header-login-regi,
+.header-search-button {
+  a {
+    width: 34px;
+    height: 34px;
+    background: $color-primary;
+    color: $color-white;
+    @include d-flex;
+    @include justify-content-center;
+    @include align-items;
+    border-radius: 50%;
+
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+    }
+  }
+}
+
+.menu-toggle {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  border-radius: 5px;
+  background: $color-white3;
+  color: $color-primary;
+}
+
+.header-layout1 {
+  .menu-area {
+    display: none;
+  }
+
+  .menu-area-content {
+    padding-right: 20px;
+    margin-bottom: -35px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: (0px 4px 9px rgba(0, 0, 0, 0.1));
+      background: $color-primary;
+      transform: skew(-8deg);
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    .main-menu {
+      padding-left: 20px;
+
+      &>ul {
+        &>li {
+          &>a {
+            color: $color-white;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .menu-area-right-content {
+      @include d-flex;
+      @include align-items;
+      gap: 40px;
+    }
+
+    .main-menu>ul>li>a {
+      @include transition;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+
+    .main-menu>ul>li.menu-item-has-children>a:after {
+      font-family: "icomoon";
+      content: "\e903";
+      speak: never;
+      font-size: calc(100% - 8px);
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      margin-left: 5px;
+    }
+  }
+}
+
+.header-layout2 {
+  position: relative;
+
+  .menu-area {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    border-bottom: 1px solid rgba(252, 252, 252, 0.11);
+    padding: 10px 0;
+  }
+
+  .menu-area-content {
+    .menu-area-right-content {
+      display: none;
+      @include align-items;
+      gap: 15px;
+    }
+  }
+
+  .main-menu a {
+    color: $color-white;
+  }
+
+  .main-menu>ul>li>a {
+    text-transform: uppercase;
+  }
+
+  .main-menu>ul>li.menu-item-has-children>a:after {
+    font-family: "icomoon";
+    content: "\e903";
+    speak: never;
+    font-size: calc(100% - 5px);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 5px;
+  }
+}
+
+.header-layout3 {
+  .menu-area-content {
+    .menu-area-right-content {
+      display: none;
+      @include align-items;
+      gap: 15px;
+    }
+  }
+
+  .main-menu>ul>li>a {
+    padding: 35px 0;
+  }
+
+  .main-menu>ul>li>a {
+    text-transform: uppercase;
+  }
+
+  .main-menu>ul>li.menu-item-has-children>a:after {
+    font-family: "icomoon";
+    content: "\e903";
+    speak: never;
+    font-size: calc(100% - 5px);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 5px;
+  }
+}
+
+.search-option-box {
+  position: relative;
+  width: 100%;
+  max-width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid $color-border;
+}
+
+.search-option-box.open {
+  max-width: 140px;
+}
+
+.search-option-box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding: 0 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.search-option-box.open input {
+  padding: 0 10px 0 45px;
+}
+
+.search-option-box .search {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 34px;
+  height: 34px;
+  @include d-flex;
+  @include justify-content-center;
+  @include align-items;
+  background: $color-primary;
+  color: $color-white;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.search-option-box.open .search {
+  border-radius: 100px;
+}
+
+.search .search-icon {
+  font-size: 30px;
+  color: $color-secondary;
+}
+
+.search-option-box .close-icon {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  font-size: 30px;
+  color: $color-secondary;
+  padding: 5px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  font-size: 12px;
+}
+
+.search-option-box.open .close-icon {
+  transform: translateY(-50%) rotate(180deg);
+  pointer-events: auto;
+  opacity: 1;
+}

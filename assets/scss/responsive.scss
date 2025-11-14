@@ -1,0 +1,1366 @@
+@use "./autoprefixer/autoprefixer" as *;
+@use "./variables/variables" as *;
+
+@media (min-width: 575px) {
+
+  .yearly-star-rating {
+    display: flex;
+
+    .year-title {
+      margin-bottom: 0;
+      width: 25%;
+    }
+
+    .star-rating-content {
+      width: 75%;
+    }
+  }
+
+  /*-------------------
+      Client Say
+  -------------------*/
+  .client-say {
+    padding: 160px 0 260px 0;
+
+    .swiper-button {
+      bottom: 20%;
+      right: 40%;
+    }
+  }
+
+  .comments {
+
+    .comments-list {
+
+      .comments-list {
+        .list-content {
+          padding-left: 135px;
+        }
+      }
+    }
+  }
+
+  .top-author {
+    padding: 60px;
+
+    .top-icon {
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+    }
+  }
+
+  .blog-card-content {
+    .card-info {
+      padding: 44px;
+
+      .card-title {
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      .card-top-content {
+        gap: 30px;
+      }
+    }
+  }
+
+  .courses-details-left-content {
+    .top-content {
+      .instructor-info {
+        border-top: 1px solid $color-white7;
+        border-bottom: 1px solid $color-white7;
+      }
+    }
+  }
+
+
+
+
+  .education-video-section {
+
+    .video-icon {
+      width: 116px;
+      height: 116px;
+      font-size: 35px;
+    }
+  }
+
+  .chooses-skill-items {
+    li {
+      width: 170px;
+    }
+  }
+
+  /*-------------------
+      Courses Cards
+    -------------------*/
+  .courses-cards {
+    &.v2 {
+      .nav {
+        gap: 10px;
+      }
+    }
+  }
+
+  /*-------------------
+      Blog Cards
+    -------------------*/
+  .blog-cards {
+    &.v1 {
+
+      .card-content-1,
+      .card-content-2,
+      .card-content-3 {
+        .content-data {
+          .admin-data {
+            gap: 25px;
+
+          }
+        }
+      }
+    }
+  }
+
+  /*-----------------------
+     Case Studies Content
+    -----------------------*/
+  .case-studies-content {
+    .case-studies-left-content {
+      .case-studies-contents {
+        padding-right: 30px;
+
+        .case-content {
+          .case-icon {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  /*--------------------------
+      Student Feedback Content
+    --------------------------*/
+  .student-feedback-content {
+    .feedback-right-content {
+      margin-left: 14px;
+    }
+  }
+
+  /*-------------------
+      My Swiper Student Slider
+    -------------------*/
+  .my-swiper-student-slider {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+    }
+  }
+
+  /*-------------------
+      Choose Us Content
+    -------------------*/
+
+  .choose-us-content {
+    .choose-us-left-content {
+      .choose-us-small-img {
+        width: 220px;
+        height: 264px;
+        top: 94px;
+        left: -90px;
+      }
+    }
+  }
+
+  /*-------------------
+      Cta
+    -------------------*/
+  .cta {
+    &.v1 {
+      .cta-title {
+        .big-title {
+          color: $color-white;
+          font-size: 48px;
+          line-height: 58px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  /*---------------------
+      How It Work Content
+    ----------------------*/
+  .how-it-work-content {
+    &.v1 {
+
+      .work-content-2,
+      .work-content-4 {
+        padding: 35px 30px 35px 55px;
+      }
+
+      .work-content-1,
+      .work-content-3 {
+        padding: 35px 30px;
+      }
+
+      .work-content-1,
+      .work-content-2,
+      .work-content-3,
+      .work-content-4 {
+        .work-icon {
+          @include d-flex;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+    About Us Content
+   -------------------*/
+  .about-us-content {
+    &.v1 {
+      .about-left-content {
+        display: grid;
+
+        .content-box-1,
+        .content-box-2,
+        .content-img-1 {
+          margin-bottom: 0;
+        }
+
+        .content-box-1,
+        .content-box-2 {
+          .title {
+
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+
+    }
+  }
+
+  /*----------------------
+     Case Studies Cards
+    ----------------------*/
+  .case-studies-cards {
+    &.v1 {
+      .card-content {
+        padding: 0 10px 0 40px;
+      }
+    }
+  }
+
+  /*-------------------
+      Comments Area
+    -------------------*/
+  .comments-area {
+    padding: 50px 60px;
+  }
+
+  /*-------------------
+      Team Content
+    -------------------*/
+  .team-content {
+    .team-member-details {
+      li {
+        width: 46%;
+      }
+    }
+  }
+
+  /*-------------------
+      Founder Ceo
+    -------------------*/
+  .founder-ceo {
+    width: 80%;
+  }
+
+  .case-studies-content {
+    .case-studies-right-content {
+      .discover-more {
+        max-width: 400px;
+      }
+    }
+  }
+
+  /*---------------------
+      Footer Contact Info
+  ------------------------*/
+  .footer-contact-info {
+    .contact-data {
+      padding: 22px 47px;
+    }
+  }
+
+  /*-----------------------------
+      Courses Cards List Content
+  -------------------------------*/
+  .courses-cards-list-content {
+    .courses-img {
+      min-width: 300px;
+      max-height: 220px;
+    }
+  }
+
+  /*-------------------
+      Check Box
+  -------------------*/
+  .check-box {
+    &.v1 {
+      .box-item {
+        width: 47%;
+      }
+    }
+
+    &.v2 {
+      .box-item {
+        width: 38%;
+      }
+    }
+  }
+
+  /*-------------------
+      Contact Info
+  -------------------*/
+  .contact-info {
+    gap: inherit;
+
+    .contact-icon {
+      margin-left: 36px;
+    }
+  }
+
+  /*-------------------
+      Banner Content
+  -------------------*/
+  .banner-content {
+
+    &.v1,
+    &.v2,
+    &.v3 {
+      .section-title {
+        .big-title {
+          font-size: 80px;
+          line-height: 88px;
+          letter-spacing: 1.6px;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Awards
+  -------------------*/
+  .awards {
+    li {
+      flex-wrap: nowrap;
+    }
+  }
+
+  /*-------------------
+      Section Title
+  -------------------*/
+  .section-title {
+    .section-title-inner {
+      .big-title {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  /*----------------------
+      Contact Us Content
+  ------------------------*/
+  .contact-us-content {
+    .contact-us-right-content {
+      padding: 60px 60px 80px 60px;
+      .section-title{
+        margin-bottom: 50px;
+      }
+     
+    }
+  }
+
+  /*-------------------
+      Service Cards
+  -------------------*/
+  .service-cards {
+    flex-wrap: nowrap;
+  }
+
+  /*------------------------------
+      Courses Cards List Content
+  --------------------------------*/
+  .courses-cards-list-content {
+    flex-wrap: nowrap;
+  }
+
+  /*-------------------
+      Events Card
+  -------------------*/
+  .events-card {
+    flex-wrap: nowrap;
+
+    .events-card-content {
+      .title {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+
+  /*-------------------
+      Student Cards
+  -------------------*/
+  .student-cards {
+    .student-card {
+      margin-left: 64px;
+      padding: 54px 60px 54px 117px;
+
+      .user-img {
+        display: block;
+      }
+    }
+  }
+
+  /*-------------------
+      Founder Ceo
+  -------------------*/
+  .founder-ceo {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 767px) {
+  .about-us-content {
+    &.v1 {
+      .about-right-content {
+        margin-top: 0;
+      }
+    }
+  }
+
+  /*-------------------
+      Client Say
+  -------------------*/
+  .client-say {
+    .swiper-button {
+      bottom: 20%;
+      right: 20%;
+    }
+
+    .mySwiper2-client {
+      width: 45%;
+    }
+  }
+
+  .client-say {
+
+    .mySwiper-client {
+      .swiper-wrapper {
+        .swiper-slide {
+          .client-mini-content {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-us-contact-info {
+    .info-list {
+
+      .info-list-content {
+        padding: 60px 60px;
+      }
+    }
+  }
+
+  .news-card {
+    .news-card-content {
+      .content-top {
+        gap: 25px;
+      }
+    }
+  }
+
+  /*-------------------
+      Courses Cards
+    -------------------*/
+  .courses-cards {
+    &.v2 {
+      .nav {
+        gap: 20px;
+      }
+    }
+  }
+
+  /*-------------------
+      Breadcum
+    -------------------*/
+  .breadcum {
+    padding: 231px 0 185px 0;
+  }
+
+  /*---------------------
+      Margin Left
+  -----------------------*/
+  .ml-25 {
+    margin-left: 25px;
+  }
+
+  /*---------------------
+      Why Choose us
+  -----------------------*/
+  .why-choose-us {
+    &.v1 {
+      .choose-us-right-content {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .cta {
+    &.v1 {
+
+      .cta-bg-right-img,
+      .cta-bg-left-img {
+        display: block;
+      }
+    }
+  }
+
+  /*---------------------
+      Courses Cards
+  -----------------------*/
+  .courses-cards {
+    &.v1 {
+      .nav-tabs {
+        .nav-link {
+          &.active {
+            &::before {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    &.v1 {
+
+      .banner-bg-left,
+      .banner-bg-right {
+        display: block;
+      }
+    }
+  }
+
+  /*---------------------
+      Main Area Content
+  -----------------------*/
+  .main-area-content {
+    &.v1 {
+      @include d-flex;
+    }
+  }
+
+  /*-------------------
+      Mobile Menu Btn
+  -------------------*/
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  /*---------------------
+      Top Content Info
+  -----------------------*/
+  .top-content-info {
+    .content-info-data {
+      @include d-flex;
+      @include justify-content-between;
+      @include align-items;
+      margin: 0;
+      padding: 0;
+
+      .search-option {
+        @include d-flex;
+      }
+    }
+  }
+
+  /*-------------------
+      Get Free Content
+  -------------------*/
+  .get-free-content {
+    .get-free-right-content {
+      padding: 40px 50px 80px 35px;
+
+      .section-title {
+        margin-bottom: 36px;
+      }
+
+      form {
+        .group-form-box {
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Comments 
+  -------------------*/
+  .comments {
+    .comments-list {
+      li {
+        .list-content {
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Comments Area
+  -------------------*/
+  .comments-area {
+    .form-box {
+      flex-wrap: nowrap;
+
+      .box-info {
+        width: 50%;
+      }
+    }
+  }
+
+  /*----------------------
+      Instructor Content
+  ------------------------*/
+  .instructor-content {
+    flex-wrap: nowrap;
+    justify-content: inherit;
+
+    .instructor-left-content {
+      .left-content-img {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+    }
+
+
+  }
+
+  /*-------------------
+      Courses Cards
+  -------------------*/
+  .courses-cards {
+    &.v3 {
+      .courses-card {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  /*-----------------------
+      How It Work Content
+  ------------------------*/
+  .how-it-work-content {
+
+    &.v3 {
+      .how-it-work-right-content {
+        padding-left: 23px;
+      }
+    }
+  }
+
+  /*-------------------
+      Banner
+  -------------------*/
+  .banner {
+    &.v3 {
+      .banner-img {
+        height: 100vh;
+        padding-top: 228px;
+      }
+
+      .swiper-banner {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Copyright section
+  -------------------*/
+  .copyright-section {
+    &.v2 {
+      align-items: center;
+
+      .copyright-content {
+        justify-content: space-between;
+      }
+    }
+  }
+
+
+
+  /*-------------------
+      Choose Us Content
+  -------------------*/
+  .choose-us-content {
+    .choose-us-left-content {
+      .choose-us-small-img {
+        display: block;
+      }
+
+      .online-support {
+        @include d-flex;
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .how-it-work-content {
+    &.v2 {
+      .how-it-work-right-content {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .student-feedback-content {
+    .feedback-right-content {
+      margin-top: 0;
+    }
+  }
+
+  /*-------------------
+      Why Choose Us
+  -------------------*/
+  .why-choose-us {
+    &.v1 {
+      .choose-us-right-content {
+        margin-top: 0;
+      }
+    }
+  }
+
+  /*-------------------
+      Banner Content
+  -------------------*/
+  .banner-content {
+    &.v3 {
+      .banner-img {
+        padding: 228px 0 260px 0;
+      }
+    }
+  }
+
+  /*-------------------
+      Client Say
+  -------------------*/
+  .client-say {
+    .swiper-button {
+      bottom: 20%;
+      right: 20%;
+    }
+
+    .mySwiper-client {
+      left: 20%;
+    }
+  }
+
+  /*-------------------
+      Cta
+  -------------------*/
+  .cta {
+    &.v2 {
+      display: flex;
+
+      .cta-left-content {
+        width: 50%;
+        display: block;
+
+        .play-icon {
+          width: 116px;
+          height: 116px;
+          font-size: 40px;
+        }
+      }
+
+      .cta-right-content {
+        width: 50%;
+        padding: 67px 70px;
+      }
+    }
+  }
+
+  /*-------------------
+      Courses Cards
+    -------------------*/
+  .courses-cards {
+    &.v2 {
+      .nav {
+        gap: 30px;
+      }
+    }
+  }
+
+  /*-------------------
+      custom margin
+    -------------------*/
+  .mt-15 {
+    margin-top: 0;
+  }
+
+  /*-------------------
+      Getting Started
+    -------------------*/
+  .getting-started {
+    gap: 72px;
+    margin-bottom: 92px;
+  }
+
+  .blog-cards {
+    &.v1 {
+
+      .card-content-2,
+      .card-content-3 {
+        .content-data {
+          padding-right: 37px;
+        }
+      }
+    }
+  }
+
+  .top-nav-search-option {
+    display: block;
+  }
+
+  /*-----------------------
+      Choose Us Content
+  ------------------------*/
+  .choose-us-content {
+    .choose-us-left-content {
+      .choose-us-big-img {
+        margin: 0 50px 0 15px;
+      }
+    }
+  }
+
+
+  /*-------------------
+      header Layout 1
+  -------------------*/
+  .header-layout1 {
+    .menu-area {
+      display: block;
+    }
+  }
+
+  /*-------------------
+      Courses Grid Nav
+  -------------------*/
+  .courses-grid-nav {
+    .nav-tabs {
+      .nav-right-content {
+        @include d-flex;
+      }
+    }
+  }
+
+  /*-------------------
+      Contact Info 3
+  -------------------*/
+  .contact-info-3 {
+    .contact-info-data {
+      flex-wrap: nowrap;
+
+      .location,
+      .phone {
+        justify-content: start;
+        padding: 35px 40px;
+
+        .location-icon,
+        .phone-icon {
+          width: 70px;
+          height: 70px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  /*-----------------------
+      Header Top Content
+  -------------------------*/
+  .header-top-content {
+    &.v2 {
+      padding: 0;
+
+      .contact-info {
+        li {
+          padding: 14px 0;
+
+          ~li {
+            border-left: 1px solid #384350;
+            padding-left: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  /*-----------------------
+      Make An Appointment
+  -------------------------*/
+  .make-an-appointment {
+    padding: 0;
+
+    .appointment-left-content {
+      display: block;
+      margin-top: -45px;
+    }
+
+    .appointment-right-content {
+      padding-left: 73px;
+    }
+  }
+
+  /*-------------------
+      Student Cards
+  -------------------*/
+  .student-cards {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex;
+    }
+  }
+
+  /*-------------------
+      User Login
+  -------------------*/
+  .content-location,
+  .content-address {
+    @include d-flex;
+  }
+
+  /*-------------------
+      User Login
+  -------------------*/
+  .user-login {
+    display: flex;
+  }
+
+  /*-------------------
+      News Letter
+  -------------------*/
+  .news-letter {
+    padding: 59px 86px;
+  }
+
+  /*-------------------
+       About us Content
+    -------------------*/
+  .about-us-content {
+    &.v1 {
+      .about-right-content {
+        padding-left: 41px;
+      }
+    }
+
+    &.v2 {
+      .about-us-right-content {
+        margin-top: 0;
+        padding-left: 63px;
+      }
+    }
+  }
+
+  /*-------------------
+       Register Now
+    -------------------*/
+  .register-now {
+    padding-top: 120px;
+    background-size: 100% 893px;
+
+    .background-big-img {
+      display: block;
+    }
+  }
+
+  /*-------------------
+       Get Free Content
+    -------------------*/
+  .get-free-content {
+    .get-free-left-content {
+      display: block;
+    }
+  }
+
+  /*-------------------
+      Blog Cards
+  -------------------*/
+
+  .blog-cards {
+    &.v1 {
+
+      .card-content-2,
+      .card-content-3 {
+        flex-wrap: nowrap;
+      }
+
+      .card-img-2,
+      .card-img-3 {
+        max-width: 238px;
+        height: 100%;
+
+        img {
+          @include transition;
+        }
+      }
+    }
+  }
+
+
+
+  /*-------------------
+      how It Work Content
+  -------------------*/
+  .how-it-work-content {
+    &.v1 {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .work-content-1 {
+      margin: 0 -30px 0 30px;
+    }
+
+    .work-content-2 {
+      margin: 0 30px 0 -30px;
+    }
+
+    .work-content-1,
+    .work-content-2,
+    .work-content-3,
+    .work-content-4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1199px) {
+
+  /*-------------------
+       Section Title
+    -------------------*/
+  .section-title {
+    .section-title-inner {
+      &.w-v1 {
+        width: 40%;
+      }
+
+      &.w-v2 {
+        width: 50%;
+      }
+
+      &.w-v3 {
+        width: 60%;
+      }
+
+      &.w-v4 {
+        width: 70%;
+      }
+
+      &.w-v5 {
+        width: 80%;
+      }
+
+      &.w-v6 {
+        width: 90%;
+      }
+    }
+  }
+
+  /*-------------------
+      Client Say
+  -------------------*/
+  .client-say {
+    .swiper-button {
+      bottom: 20%;
+      right: 20%;
+    }
+
+    .mySwiper-client {
+      left: 25%;
+    }
+  }
+
+
+  /*-------------------------------
+      Courses Details Left Content
+  ---------------------------------*/
+  .courses-details-left-content {
+    .top-content {
+      padding: 40px;
+
+      .instructor-info {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        >li {
+          border-right: 1px solid $color-white7;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Banner Content
+  -------------------*/
+  .banner-content {
+    &.v2 {
+      .swiper-banner {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  /*-------------------
+      Coursesv3
+  -------------------*/
+  .coursesv3 {
+    padding-bottom: 213px;
+  }
+
+  /*----------------------
+     How It Work Content
+  ------------------------*/
+  .how-it-work-content {
+    &.v2 {
+      .how-it-work-left-content {
+        padding-right: 80px;
+      }
+    }
+  }
+
+  /*-------------------
+      Messenger Icon
+  -------------------*/
+  .messenger-icon {
+    display: flex;
+  }
+
+  /*-------------------
+      Nav Middle Content
+  -------------------*/
+  .nav-middle-content {
+    display: flex;
+  }
+
+  /*-------------------
+      Courses Cards
+  -------------------*/
+  .courses-cards {
+    &.v3 {
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: flex;
+      }
+    }
+  }
+
+  /*-------------------
+      Header Layout 3
+  -------------------*/
+  .header-layout3,
+  .header-layout2 {
+    .menu-area-content {
+      .menu-area-right-content {
+        display: flex;
+      }
+    }
+  }
+
+  /*-------------------
+      Features
+  -------------------*/
+  .features {
+    margin-top: -135px;
+    margin-bottom: 210px;
+  }
+
+  /*-------------------
+      Team Member Data
+  -------------------*/
+  .team-member-data {
+    flex-wrap: nowrap;
+    justify-content: inherit;
+    padding: 46px;
+  }
+
+  /*-------------------
+      Features Card
+  -------------------*/
+  .features-card {
+    .card-content {
+      margin-bottom: 0;
+    }
+  }
+
+  /*-------------------
+      Follow Us link
+  -------------------*/
+  .follow-us-link {
+    @include d-flex;
+  }
+
+  /*-------------------
+      Banner Content
+  -------------------*/
+  .banner-content {
+    &.v1 {
+      padding: 213px 0 0px 0;
+    }
+  }
+
+  /*-------------------
+      Banner
+  -------------------*/
+  .banner {
+    &.v1 {
+      .banner-right-content {
+        display: block;
+      }
+    }
+  }
+
+  /*-----------------------
+      Menu Contact Number
+  ------------------------*/
+
+  .menu-contact-number {
+    @include d-flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  .client-say {
+    .swiper-button {
+      bottom: 20%;
+      right: 23%;
+    }
+
+    .mySwiper-client {
+      left: 30%;
+    }
+  }
+
+
+  .getting-started {
+    &.v2 {
+      gap: 100px;
+    }
+  }
+
+  .asked-question {
+
+    .asked-question-right-content {
+      display: block;
+    }
+  }
+
+  .footer-contact-info {
+    @include justify-content-between;
+    gap: 10px;
+  }
+
+  /*-------------------
+      Menu Social 
+  -------------------*/
+  .menu-social {
+    display: flex;
+  }
+
+
+
+  /*-----------------------
+      Contact Us Content
+  -------------------------*/
+  .contact-us-content {
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .contact-us-img {
+      display: block;
+      width: 40%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .contact-us-right-content {
+      width: 60%;
+    }
+  }
+
+  /*-------------------
+      Catagoey
+  -------------------*/
+  .catagoey {
+    justify-content: inherit;
+  }
+
+  /*-------------------
+      Banner Content
+  -------------------*/
+  .banner-content {
+    &.v3 {
+      .swiper-banner {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .client-say {
+    .swiper-button {
+      bottom: 20%;
+      right: 29%;
+    }
+
+    .mySwiper-client {
+      left: 33%;
+    }
+  }
+}

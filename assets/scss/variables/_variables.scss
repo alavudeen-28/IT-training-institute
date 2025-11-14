@@ -1,0 +1,43 @@
+/* =================
+    Theme Base
+   =================*/
+
+:root {
+    --color-primary: #179BD7;
+    --color-secondary: #1C1C1C;
+    --color-paragraph: #7B7E86;
+    --color-white: #ffffff;
+    --color-white2: #F6FDFF;
+    --color-white3: #F4F4F4;
+    --color-white4: #C0C6D7;
+    --color-white5: #f6f7fa;
+    --color-white6: #f5fbfd;
+    --color-white7: #e6e6e6;
+    --color-blue: #179BD7;
+    --color-black: #1C1C1C;
+    --color-black2: #7B7E86;
+    --color-black3: #1C1C25;
+    --color-border: #DDE0E9;
+    --title-font: "Kanit", sans-serif;
+    --body-font: "Kumbh sans", sans-serif;
+  }
+  
+//   Color
+  $color-primary: var(--color-primary);
+  $color-secondary: var(--color-secondary);
+  $color-paragraph: var(--color-paragraph);
+  $color-white: var(--color-white);
+  $color-white2: var(--color-white2);
+  $color-white3: var(--color-white3);
+  $color-white4: var(--color-white4);
+  $color-white5: var(--color-white5);
+  $color-white6: var(--color-white6);
+  $color-white7: var(--color-white7);
+  $color-blue: var(--color-blue);
+  $color-black: var(--color-black);
+  $color-black2: var(--color-black2);
+  $color-black3: var(--color-black3);
+  $color-border: var(--color-border);
+  $title-font: var(--title-font);
+  $body-font: var(--body-font);
+
