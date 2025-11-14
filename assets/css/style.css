@@ -1617,15 +1617,19 @@ input[type=button] {
   z-index: 0;
 }
 
-.banner-content.v3 .banner-img {
+.banner-content.v2 .banner-img {
+  padding-top: 202px;
+  padding-bottom: 5px;                /* remove bottom padding that may force crop */
+  min-height: 600px;                /* adjust to match your image height (or use 60vh) */
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  padding: 120px 0;
+  background-position: center bottom; 
+  top:0;/* show bottom of image if needed */
+  background-size: auto 160%;        /* make background height match element height (no crop) */
   position: relative;
   z-index: 1;
+
 }
+
 
 .banner-content.v3 .banner-img::before {
   position: absolute;

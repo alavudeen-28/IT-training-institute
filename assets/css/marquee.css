@@ -1,0 +1,117 @@
+/* Add this file (or append the rules into assets/css/style.css). */
+/* Theme variables — adapt these to your project's color variables if you have them in style.css */
+:root {
+  /* If your project already defines these, the values below will be overridden by your existing variables */
+  --partners-bg: #ffffff;           /* subtle warm background used in the screenshot area */
+  --partners-accent: #0b7d74;       /* company-name color (red) — change to match your theme */
+  --partners-title-color: ;  /* title color (dark) */
+  --partners-padding-top: 100px;     /* padding from the top you requested */
+}
+
+/* Wrapper - full-bleed behavior: this makes the section span the entire viewport width */
+.partners-marquee {
+  padding: var(--partners-padding-top) 0 36px;
+  background: var(--partners-bg);
+  position: relative;
+  z-index: 1;
+}
+
+/* Make it full-bleed (breaks out of .container); remove this class if you want it constrained */
+.partners-marquee--full {
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+/* Keep inner container for centering the title and to preserve your site's container width for text */
+.partners-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.partners-title {
+  font-weight: 800;
+  color: var(--partners-title-color);
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 48px;
+}
+
+/* Marquee base */
+.marquee {
+ .marquee {
+  overflow: hidden;
+  width: calc(100% - 200px);  /* Leaves 100px margin on each side */
+  margin: 0 auto;             /* Centers the marquee */
+  display: block;
+}
+
+}
+
+/* Track that will be animated */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 5rem);
+  /* CSS variables that JS will set:
+     --marquee-duration : total seconds for one group's travel
+     --marquee-translate: the final translateX value (e.g. -600px)
+  */
+  animation-name: marqueeMove;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* Each repeated group (must be duplicated for seamless loop) */
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 5rem);
+  white-space: nowrap;
+}
+
+/* Each partner text */
+.partner {
+  display: inline-block;
+  color: var(--partners-accent);
+  font-weight: 700;
+  font-style: italic;            /* matches screenshot style */
+  font-size: clamp(18px, 2.1vw, 28px);
+  transition: transform .22s ease;
+  line-height: 1;
+  padding: 20px 100px;
+}
+
+/* small hover lift */
+.partner:hover {
+  transform: translateY(-6px);
+}
+
+/* Pause on hover/focus */
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Keyframes use the CSS var set by JS for final translate (px or negative px).
+   By going from 0 -> var(--marquee-translate) we ensure the travel equals the width JS measured. */
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--marquee-translate, -50%));
+  }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}
